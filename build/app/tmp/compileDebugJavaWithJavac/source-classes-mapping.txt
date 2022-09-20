@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/chifabrasil_admin/BuildConfig.java
+ com.example.chifabrasil_admin.BuildConfig
