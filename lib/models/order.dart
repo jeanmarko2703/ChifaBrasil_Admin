@@ -20,6 +20,7 @@ class Order {
         required this.street,
         required this.user,
         required this.date,
+        required this.userName
         
     });
 
@@ -34,6 +35,7 @@ class Order {
     String street;
     String user;
     String date;
+    String userName;
     
 
     factory Order.fromJson(String str) => Order.fromMap(json.decode(str));
@@ -53,6 +55,7 @@ class Order {
         street: json["STREET"],
         user: json["USER"],
         date: json["DATE"],
+        userName: json["USER_NAME"]
     );
 
     Map<String, dynamic> toMap() => {
@@ -67,6 +70,7 @@ class Order {
         "STREET": street,
         "USER": user,
         "DATE":date,
+        "USER_NAME":userName
     };
 }
 

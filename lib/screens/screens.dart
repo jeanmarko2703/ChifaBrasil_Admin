@@ -15,6 +15,9 @@ export 'package:chifabrasil_admin/screens/order_details_screen.dart';
 
 export 'package:chifabrasil_admin/screens/categories_content_screen.dart';
 
-
 export 'package:chifabrasil_admin/screens/add_dish_screen.dart';
+
+export 'package:chifabrasil_admin/screens/print_screen.dart';
+
+
 

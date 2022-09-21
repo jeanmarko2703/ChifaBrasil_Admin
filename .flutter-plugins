@@ -1,7 +1,8 @@
 # This is a generated file; do not edit or check into version control.
-flutter_plugin_android_lifecycle=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/
-google_maps_flutter=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-2.2.0/
-google_maps_flutter_android=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter_android-2.1.10/
-google_maps_flutter_ios=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter_ios-2.1.11/
-location=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/location-4.4.0/
-location_web=/Users/jeanaguirre/Development/flutter/.pub-cache/hosted/pub.dartlang.org/location_web-3.1.1/
+flutter_bluetooth_basic=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_bluetooth_basic-0.1.7\\
+flutter_plugin_android_lifecycle=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-2.0.7\\
+google_maps_flutter=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_maps_flutter-2.2.0\\
+google_maps_flutter_android=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_maps_flutter_android-2.1.10\\
+google_maps_flutter_ios=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_maps_flutter_ios-2.1.11\\
+location=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\location-4.4.0\\
+location_web=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\location_web-3.1.1\\

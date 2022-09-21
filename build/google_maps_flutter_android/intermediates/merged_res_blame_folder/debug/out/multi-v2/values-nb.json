@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jeanaguirre/Desktop/chifabrasil_admin/build/google_maps_flutter_android/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "C:\\Users\\jeanm\\Documents\\GitHub\\ChifaBrasil_Admin\\build\\google_maps_flutter_android\\intermediates\\res\\merged\\debug\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/res/values-nb/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "125",
-                        "endOffsets": "320"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1064",
-                        "endColumns": "129",
-                        "endOffsets": "1189"
-                    }
-                },
-                {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/values-nb/values-nb.xml",
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/res/values-nb/values.xml",
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\642cc9e2632e586d1058ed231591ead4\\jetified-play-services-base-18.0.1\\res\\values-nb\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,32 +35,32 @@
                         "startOffsets": "55,161,320,446,555,711,841,961,1194,1348,1455,1616,1744,1886,2062,2129,2191",
                         "endColumns": "105,158,125,108,155,129,119,102,153,106,160,127,141,175,66,61,77",
                         "endOffsets": "156,315,441,550,706,836,956,1059,1343,1450,1611,1739,1881,2057,2124,2186,2264"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\65c8b9154009d1931a3db50d7627d9e4\\jetified-play-services-basement-18.0.0\\res\\values-nb\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "125",
+                        "endOffsets": "320"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1064",
+                        "endColumns": "129",
+                        "endOffsets": "1189"
                     }
                 }
             ]
         },
         {
-            "outputFile": "/Users/jeanaguirre/Desktop/chifabrasil_admin/build/google_maps_flutter_android/intermediates/res/merged/debug/values-nb/values-nb.xml",
+            "outputFile": "C:\\Users\\jeanm\\Documents\\GitHub\\ChifaBrasil_Admin\\build\\google_maps_flutter_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/res/values-nb/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "125",
-                        "endOffsets": "320"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1064",
-                        "endColumns": "129",
-                        "endOffsets": "1189"
-                    }
-                },
-                {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/values-nb/values-nb.xml",
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -94,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/res/values-nb/values.xml",
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\642cc9e2632e586d1058ed231591ead4\\jetified-play-services-base-18.0.1\\res\\values-nb\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -108,6 +91,23 @@
                         "startOffsets": "55,161,320,446,555,711,841,961,1194,1348,1455,1616,1744,1886,2062,2129,2191",
                         "endColumns": "105,158,125,108,155,129,119,102,153,106,160,127,141,175,66,61,77",
                         "endOffsets": "156,315,441,550,706,836,956,1059,1343,1450,1611,1739,1881,2057,2124,2186,2264"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jeanm\\.gradle\\caches\\transforms-2\\files-2.1\\65c8b9154009d1931a3db50d7627d9e4\\jetified-play-services-basement-18.0.0\\res\\values-nb\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "125",
+                        "endOffsets": "320"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1064",
+                        "endColumns": "129",
+                        "endOffsets": "1189"
                     }
                 }
             ]

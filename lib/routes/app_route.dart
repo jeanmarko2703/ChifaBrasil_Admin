@@ -37,6 +37,9 @@ class AppRoute {
         {'categoriesContentScreen': (BuildContext context) => const CategoriesContentScreen()});
          appRoutes.addAll(
         {'addDishScreen': (BuildContext context) => const AddDishScreen()});
+         appRoutes.addAll(
+        {'printScreen': (BuildContext context) => const PrintScreen()});
+   
    
 
     return appRoutes;

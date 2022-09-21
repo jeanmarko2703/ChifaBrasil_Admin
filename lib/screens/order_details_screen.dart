@@ -1,3 +1,4 @@
+import 'package:chifabrasil_admin/models/arguments_print.dart';
 import 'package:chifabrasil_admin/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -89,9 +90,34 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Pedido realizado el: ' + order.date,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'fecha del pedido: ' + order.date,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: AppTheme.primary),
+                  child: IconButton(
+                    onPressed: ()async {
+                        List<Dish>dishes= await ordersService.loadDishOrders(order.id.toString());
+                       Navigator.pushNamed(context, 'printScreen', arguments: ArgumentsPrint(order, dishes));
+
+                    },
+                    icon: Icon(
+                      Icons.print,
+                      size: 30,
+                    ),
+                    alignment: Alignment.center,
+                    color: Colors.white,
+                  ),
+                )
+              ],
             ),
           ),
           Padding(
@@ -152,7 +178,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                       barrierDismissible: true,
                       context: context,
                       builder: (context) {
-                        return StatusDialog(idOrder:order.id.toString());
+                        return StatusDialog(idOrder: order.id.toString());
                       });
                 }),
           ),
@@ -281,10 +307,10 @@ class _StatusDialogState extends State<StatusDialog> {
               padding: EdgeInsets.symmetric(vertical: 10),
               child: ElevatedButton(
                   onPressed: () {
-                    ordersService.changeStatusOrder(selectedItem, widget.idOrder);
+                    ordersService.changeStatusOrder(
+                        selectedItem, widget.idOrder);
                     Navigator.pushReplacementNamed(context, 'navigationScreen');
-                  }
-                      ,
+                  },
                   child: Text('Enviar')),
             )
           ],

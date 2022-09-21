@@ -25,7 +25,10 @@ class NavigationScreen extends StatelessWidget {
          ,
       ),
 
-      bottomNavigationBar: CustomNavigationBar(),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: CustomNavigationBar(),
+      ),
     );
   }
 }
