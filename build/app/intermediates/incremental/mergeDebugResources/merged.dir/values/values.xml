@@ -117,6 +117,15 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">450863827204-klogis6e5g34a2iu55d11b72ubmgrrq6.apps.googleusercontent.com</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firebase_database_url" translatable="false">https://chifabrasil-app-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">450863827204</string>
+    <string name="google_api_key" translatable="false">AIzaSyChhTCxThqkM2DT-HOG5yIbVRcarCK4TTg</string>
+    <string name="google_app_id" translatable="false">1:450863827204:android:b62652502f44372811e851</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyChhTCxThqkM2DT-HOG5yIbVRcarCK4TTg</string>
+    <string name="google_storage_bucket" translatable="false">chifabrasil-app.appspot.com</string>
+    <string name="project_id" translatable="false">chifabrasil-app</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <!-- Show a splash screen on the activity. Automatically removed when

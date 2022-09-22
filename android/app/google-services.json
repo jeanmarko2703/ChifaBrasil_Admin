@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "450863827204",
+    "firebase_url": "https://chifabrasil-app-default-rtdb.firebaseio.com",
+    "project_id": "chifabrasil-app",
+    "storage_bucket": "chifabrasil-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450863827204:android:b62652502f44372811e851",
+        "android_client_info": {
+          "package_name": "com.jeanmarkoaguirre.chifabrasil_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450863827204-tik1mmnakm8pe1rrjfleg02dcrjliltl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jeanmarkoaguirre.chifabrasil_admin",
+            "certificate_hash": "ee9771671a2443c99d05824b29cc2f2141fb6f47"
+          }
+        },
+        {
+          "client_id": "450863827204-klogis6e5g34a2iu55d11b72ubmgrrq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChhTCxThqkM2DT-HOG5yIbVRcarCK4TTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450863827204-klogis6e5g34a2iu55d11b72ubmgrrq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

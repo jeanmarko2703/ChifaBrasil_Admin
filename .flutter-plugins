@@ -1,4 +1,8 @@
 # This is a generated file; do not edit or check into version control.
+firebase_core=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-1.22.0\\
+firebase_core_web=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-1.7.2\\
+firebase_messaging=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_messaging-13.0.2\\
+firebase_messaging_web=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_messaging_web-3.1.4\\
 flutter_bluetooth_basic=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_bluetooth_basic-0.1.7\\
 flutter_plugin_android_lifecycle=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-2.0.7\\
 google_maps_flutter=C:\\Users\\jeanm\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_maps_flutter-2.2.0\\

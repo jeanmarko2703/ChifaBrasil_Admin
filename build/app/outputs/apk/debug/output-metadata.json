@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.chifabrasil_admin",
+  "applicationId": "com.jeanmarkoaguirre.chifabrasil_admin",
   "variantName": "processDebugResources",
   "elements": [
     {
