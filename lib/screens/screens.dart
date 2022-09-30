@@ -20,4 +20,6 @@ export 'package:chifabrasil_admin/screens/add_dish_screen.dart';
 export 'package:chifabrasil_admin/screens/print_screen.dart';
 
 
+export 'package:chifabrasil_admin/screens/notification_screen.dart';
+
 

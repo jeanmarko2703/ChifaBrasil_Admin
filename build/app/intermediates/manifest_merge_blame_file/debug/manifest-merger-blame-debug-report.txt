@@ -194,11 +194,11 @@
 124                android:value="com.google.firebase.components.ComponentRegistrar" />
 124-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\0bed5d219761d1937f7d952dc6e548de\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
 125            <meta-data
-125-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\4bf0f3619c895a86c5dcb64044e8802c\jetified-firebase-installations-17.0.2\AndroidManifest.xml:18:13-20:85
+125-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\6b27a4389187b6761cb55ad088223e8a\jetified-firebase-installations-17.0.3\AndroidManifest.xml:18:13-20:85
 126                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-126-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\4bf0f3619c895a86c5dcb64044e8802c\jetified-firebase-installations-17.0.2\AndroidManifest.xml:19:17-127
+126-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\6b27a4389187b6761cb55ad088223e8a\jetified-firebase-installations-17.0.3\AndroidManifest.xml:19:17-127
 127                android:value="com.google.firebase.components.ComponentRegistrar" />
-127-->[com.google.firebase:firebase-installations:17.0.2] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\4bf0f3619c895a86c5dcb64044e8802c\jetified-firebase-installations-17.0.2\AndroidManifest.xml:20:17-82
+127-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\jeanm\.gradle\caches\transforms-2\files-2.1\6b27a4389187b6761cb55ad088223e8a\jetified-firebase-installations-17.0.3\AndroidManifest.xml:20:17-82
 128        </service>
 129
 130        <provider
