@@ -4,7 +4,7 @@ import 'package:chifabrasil_admin/models/arguments_print.dart';
 import 'package:esc_pos_bluetooth/esc_pos_bluetooth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bluetooth_basic/flutter_bluetooth_basic.dart';
-
+import 'package:flutter/services.dart';
 
 
 import 'package:esc_pos_utils/esc_pos_utils.dart';

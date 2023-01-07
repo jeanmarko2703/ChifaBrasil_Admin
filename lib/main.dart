@@ -4,7 +4,7 @@ import 'package:chifabrasil_admin/services/push_notifications_service.dart';
 import 'package:chifabrasil_admin/services/services.dart';
 import 'package:chifabrasil_admin/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+
 
 void main() async {
 

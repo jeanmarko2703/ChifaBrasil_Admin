@@ -28,10 +28,10 @@ io/flutter/plugins/firebase/messaging/JobIntentService.java
 io/flutter/plugins/firebase/messaging/FlutterFirebasePermissionManager.java
  io.flutter.plugins.firebase.messaging.FlutterFirebasePermissionManager
  io.flutter.plugins.firebase.messaging.FlutterFirebasePermissionManager$RequestPermissionsSuccessCallback
-io/flutter/plugins/firebase/messaging/FlutterFirebaseMessagingReceiver.java
- io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
 io/flutter/plugins/firebase/messaging/FlutterFirebaseMessagingStore.java
  io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingStore
+io/flutter/plugins/firebase/messaging/FlutterFirebaseMessagingReceiver.java
+ io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
 io/flutter/plugins/firebase/messaging/FlutterFirebaseMessagingInitProvider.java
  io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
 io/flutter/plugins/firebase/messaging/PluginRegistrantException.java
