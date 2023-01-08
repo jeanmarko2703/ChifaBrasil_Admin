@@ -1,4 +1,5 @@
 import 'package:chifabrasil_admin/services/orders_service.dart';
+import 'package:chifabrasil_admin/services/services.dart';
 import 'package:chifabrasil_admin/theme/app_theme.dart';
 import 'package:chifabrasil_admin/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -73,6 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final ordersService= Provider.of<OrdersService>(context);
+    final menuService= Provider.of<MenuService>(context);
     List<Order> orders=ordersService.orders;
     final List<String>statusList=['Pendientes', 'En camino','Entregados'];
     
@@ -96,12 +98,55 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                ElevatedButton(
-                    onPressed: hola,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                    onPressed: () async {
+
+                      
+
+
+                      bool pass= await  menuService.updateMenuOpen();
+
+                     if(pass){
+
+                      showDialog(context: context, builder:(context)=> AlertDialog(
+                        
+                        title: Text('Se abrió el menú'),
+                        actions: [ElevatedButton(onPressed: () => Navigator.pop(context), child: Text('Volver'))],
+                      ));
+
+                     }
+
+                    },
                     child: const Text(
-                      'Abrir / Cerrar',
+                      'Abrir Menú',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     )),
+                    SizedBox(width: 10,),
+                    ElevatedButton(
+                    onPressed: () async {
+
+                      bool pass= await  menuService.updateMenuClose();
+
+                     if(pass){
+
+                      showDialog(context: context, builder:(context)=> AlertDialog(
+                        
+                        title: Text('Se cerró el menú'),
+                        actions: [ElevatedButton(onPressed: () => Navigator.pop(context), child: Text('Volver'))],
+                      ));
+
+                     }
+
+                    },
+                    child: const Text(
+                      'Cerrar Menú',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    )),
+                  ],
+                ),
                 const SizedBox(
                   height: 20,
                 ),

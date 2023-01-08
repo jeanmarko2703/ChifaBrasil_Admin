@@ -1,3 +1,5 @@
+export 'package:chifabrasil_admin/models/printer.dart';
+
 export 'package:chifabrasil_admin/models/menu_option.dart';
 
 export 'package:chifabrasil_admin/models/dish.dart';

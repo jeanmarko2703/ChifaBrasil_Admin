@@ -62,6 +62,10 @@ class DishForm extends StatelessWidget {
     } else {
       dishFinal = arguments.dish;
     }
+     dishForm.name= dishFinal.name;
+     dishForm.description= dishFinal.description.toString();
+     dishForm.price= dishFinal.price.toDouble();
+
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30),
       child: Form(
@@ -75,12 +79,14 @@ class DishForm extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               TextFormField(
+                initialValue:
+                    dishFinal.name == 'Nombre' ? null : dishFinal.name,
                 keyboardType: TextInputType.text,
                 decoration: InputDecorationsBorderRadious.authInputDecoration(
                     hintText: dishFinal.name),
                 onChanged: (value) => dishForm.name = value,
                 validator: (value) {
-                  return (value != null && value.length >= 1)
+                  return (value != null  && value.length >= 1)
                       ? null
                       : 'El nombre del plato es obligatorio';
                 },
@@ -89,14 +95,18 @@ class DishForm extends StatelessWidget {
               Text('Descripción: ',
                   style: TextStyle(fontWeight: FontWeight.bold)),
               TextFormField(
+                initialValue: dishFinal.description == 'Descripción'
+                    ? null
+                    : dishFinal.description,
                 minLines: 3,
                 maxLines: 5,
+                
                 keyboardType: TextInputType.text,
                 decoration: InputDecorationsBorderRadious.authInputDecoration(
                     hintText: dishFinal.description!),
                 onChanged: (value) => dishForm.description = value,
                 validator: (value) {
-                  return (value != null && value.length >= 1)
+                  return (value != null  && value.length >= 1)
                       ? null
                       : 'La descripción es obligatoria';
                 },
@@ -104,12 +114,15 @@ class DishForm extends StatelessWidget {
               SizedBox(height: 20),
               Text('Precio: ', style: TextStyle(fontWeight: FontWeight.bold)),
               TextFormField(
+                initialValue: dishFinal.price.toString() == '0.0'
+                    ? null
+                    : dishFinal.price.toString(),
                 keyboardType: TextInputType.number,
                 decoration: InputDecorationsBorderRadious.authInputDecoration(
                     hintText: dishFinal.price.toString()),
                 onChanged: (value) => dishForm.price = double.parse(value),
                 validator: (value) {
-                  return (value != null && value.length >= 1)
+                  return (value != null  && value.length >= 1)
                       ? null
                       : 'El precio es obligatorio';
                 },
@@ -119,56 +132,62 @@ class DishForm extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                       if (arguments.dish.name != newDish.name)
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 252, 17, 0)),
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: (context) {
-                                return AlertDialog(
-                                  contentPadding: EdgeInsets.only(
-                                      left: 20, right: 20, top: 20),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(40)),
-                                  elevation: 5,
-                                  title: Text('Eliminar plato'),
-                                  content: Text(
-                                      '¿Estás seguro que lo quieres elimnar?'),
-                                  actions: [
-                                    
-                                    Row(
-                                      mainAxisAlignment:MainAxisAlignment.center,
-                                      children: [ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            primary: Color.fromARGB(
-                                                255, 252, 17, 0)),
-                                        onPressed: () {
-                                          dishService.deleteDish(catId, dishId);
-                                          Navigator.of(context).popUntil(
-                                              (route) => route.isFirst);
-                                          Navigator.pushReplacementNamed(
-                                              context, 'navigationScreen');
-                                        },
-                                        child: Text('Eliminar'))],)
-                                  ],
-                                );
-                              });
-                        },
-                        child: Icon(Icons.delete),
-                      ),
+                      if (arguments.dish.name != newDish.name)
+                        ElevatedButton(
+                          onPressed: () {
+                            showDialog(
+                                context: context,
+                                builder: (context) {
+                                  return AlertDialog(
+                                    contentPadding: EdgeInsets.only(
+                                        left: 20, right: 20, top: 20),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(40)),
+                                    elevation: 5,
+                                    title: Text('Eliminar plato'),
+                                    content: Text(
+                                        '¿Estás seguro que lo quieres elimnar?'),
+                                    actions: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          ElevatedButton(
+                                              style: ElevatedButton.styleFrom(
+                                                  primary: Color.fromARGB(
+                                                      255, 252, 17, 0)),
+                                              onPressed: () {
+                                                dishService.deleteDish(
+                                                    catId, dishId);
+                                                Navigator.of(context).popUntil(
+                                                    (route) => route.isFirst);
+                                                Navigator.pushReplacementNamed(
+                                                    context,
+                                                    'navigationScreen');
+                                              },
+                                              child: Text('Eliminar'))
+                                        ],
+                                      )
+                                    ],
+                                  );
+                                });
+                          },
+                          child: Icon(Icons.delete),
+                        ),
                       ElevatedButton(
                           onPressed: () {
                             if (dishForm.isValidForm()) {
                               print(dishForm.dish.toMap());
-
-                              if (arguments.dish.name == newDish.name) {
-                                dishService.createDish(catId, dishForm.dish);
-                              } else {
-                                dishService.updateDish(
-                                    catId, dishForm.dish, dishId);
+                              if (dishFinal.name!=dishForm.name || dishFinal.description!=dishForm.description || dishFinal.price!=dishForm.price) {
+                                if (arguments.dish.name == newDish.name) {
+                                  dishService.createDish(catId, dishForm.dish);
+                                } else {
+                                  dishService.updateDish(
+                                      catId, dishForm.dish, dishId);
+                                }
                               }
+
                               dishService.loadDishes(catId);
                               Navigator.of(context)
                                   .popUntil((route) => route.isFirst);

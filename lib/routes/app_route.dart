@@ -10,6 +10,7 @@ class AppRoute {
     // MenuOption(route: 'ordersScreen', name: 'orders', screen: const OrdersScreen()),
     MenuOption(route: 'scheduleScreen', name: 'schedule', screen: const ScheduleScreen()),
     MenuOption(route: 'categoriesScreen', name: 'categories', screen: const CategoriesScreen()),
+    MenuOption(route: 'settingsScreen', name: 'settings', screen: const SettingsScreen()),
     // MenuOption(route: 'salesScreen', name: 'sales', screen: const SalesScreen()),
     
   ];
@@ -41,6 +42,10 @@ class AppRoute {
         {'printScreen': (BuildContext context) => const PrintScreen()});
          appRoutes.addAll(
         {'notificationScreen': (BuildContext context) => const NotificationScreen()});
+         appRoutes.addAll(
+        {'settingsScreen': (BuildContext context) => const SettingsScreen()});
+        appRoutes.addAll(
+        {'printDetectionScreen': (BuildContext context) => const PrintDetectionScreen()});
    
    
 

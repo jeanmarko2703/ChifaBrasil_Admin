@@ -64,6 +64,14 @@ class CustomNavigationBar extends StatelessWidget {
                   ),
                   label: 'Carta',
                   backgroundColor: AppTheme.backgroundColor),
+
+               BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.settings,
+                    size: 30,
+                  ),
+                  label: 'Config',
+                  backgroundColor: AppTheme.backgroundColor),
                 // BottomNavigationBarItem(
                 //   icon: Icon(
                 //     Icons.attach_money_rounded,

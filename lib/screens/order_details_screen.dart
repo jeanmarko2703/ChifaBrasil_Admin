@@ -6,8 +6,26 @@ import 'package:provider/provider.dart';
 import '../models/direction.dart';
 import '../models/models.dart';
 import '../providers/location_provider.dart';
+import '../providers/printers_provider.dart';
 import '../services/orders_service.dart';
 import '../theme/app_theme.dart';
+import 'dart:io' show Platform;
+import 'package:esc_pos_bluetooth/esc_pos_bluetooth.dart';
+import 'package:flutter_bluetooth_basic/flutter_bluetooth_basic.dart';
+import 'dart:io' show Platform;
+import 'dart:typed_data';
+import 'package:chifabrasil_admin/models/arguments_print.dart';
+import 'package:esc_pos_bluetooth/esc_pos_bluetooth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bluetooth_basic/flutter_bluetooth_basic.dart';
+import 'package:flutter/services.dart';
+
+
+import 'package:esc_pos_utils/esc_pos_utils.dart';
+
+import '../models/models.dart';
+
+
 
 class OrderDetailsScreen extends StatefulWidget {
   const OrderDetailsScreen({Key? key}) : super(key: key);
@@ -21,18 +39,102 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
   Marker? _origin;
   Marker? _destination;
   Directions? _info;
+    
+  PrinterBluetoothManager _printerManager = PrinterBluetoothManager();
+  List<PrinterBluetooth> _devices=[];
+  String _devicesMsg='';
+  BluetoothManager bluetoothManager= BluetoothManager.instance;
+
+   
+   void initPrinter() {
+    _printerManager.startScan(Duration(seconds: 2));
+    _printerManager.scanResults.listen((val) {
+      if (!mounted) return;
+      setState(() => _devices = val);
+      if (_devices.isEmpty) setState(() => _devicesMsg = 'No Devices');
+    });
+  }
+  Future<void> _startPrint(PrinterBluetooth printer, ArgumentsPrint orderFinal) async {
+    _printerManager.selectPrinter(printer);
+    final result = await _printerManager.printTicket(await _ticket(PaperSize.mm80, orderFinal));
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        content: Text(result.msg),
+      ),
+    );
+  }
+  
+
+  Future<Ticket> _ticket(PaperSize paper, ArgumentsPrint orderFinal) async {
+
+    
+    final ticket = Ticket(paper);
+    double total=0;
+    ticket.text('Chifa Brasil', styles: PosStyles(align: PosAlign.center, height: PosTextSize.size2 , width: PosTextSize.size2  ));
+    ticket.text('');
+    ticket.text('');
+    ticket.text('Fecha del pedido: '+orderFinal.order.date);
+    ticket.text('Cliente: '+ orderFinal.order.userName);
+    ticket.text('Numero de telefono: '+orderFinal.order.phone.toString());
+    ticket.text('Metodo: '+orderFinal.order.paymentMethod);
+    ticket.text('Direccion:'+orderFinal.order.street);
+    ticket.text('Numero de casa o dpt:'+orderFinal.order.houseNumber);
+    ticket.text('');
+    ticket.text('');
+    ticket.text('Lista de pedidos:');
+    for(int i=0; i<orderFinal.dishes.length;i++){
+      
+      total=total+ (orderFinal.dishes[i].price*orderFinal.dishes[i].quantity!);
+      ticket.text('- '+orderFinal.dishes[i].name);
+      ticket.text('S/.'+orderFinal.dishes[i].price.toString() +' x '+orderFinal.dishes[i].quantity.toString());
+      if(orderFinal.dishes.length-1==i)
+      {ticket.text('Total: '+ total.toString());}
+      
+
+    }
+    ticket.text('');
+    ticket.text('');
+    // int total = 0;
+
+    
+
+    return ticket;
+  }
+
+
   @override
   void dispose() {
     // TODO: implement dispose
+    _printerManager.stopScan();
     _googleMapController.dispose();
     super.dispose();
   }
 
   @override
   void initState() {
+
+     if (Platform.isAndroid) {
+      bluetoothManager.state.listen((val) {
+        print('state = $val');
+        if (!mounted) return;
+        if (val == 12) {
+          print('on');
+          initPrinter();
+        } else if (val == 10) {
+          print('off');
+          setState(() => _devicesMsg = 'Bluetooth Disconnect!');
+        }
+      });
+    } else {
+      initPrinter();
+    }
+
+   
     // TODO: implement initState
     super.initState();
     Provider.of<LocationProvider>(context, listen: false).initialization();
+    
     _origin = Marker(
       markerId: const MarkerId('origin'),
       infoWindow: const InfoWindow(title: 'Restaurante chifa brasil'),
@@ -44,6 +146,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     final Order order = ModalRoute.of(context)!.settings.arguments as Order;
+    final printerListProvider= Provider.of<PrinterListProvider>(context, listen: false);
 
     final _initialCameraPosition = CameraPosition(
       target: LatLng(order.lat, order.lng),
@@ -106,7 +209,20 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                   child: IconButton(
                     onPressed: ()async {
                         List<Dish>dishes= await ordersService.loadDishOrders(order.id.toString());
-                       Navigator.pushNamed(context, 'printScreen', arguments: ArgumentsPrint(order, dishes));
+
+                        print('el seleccionado es:');
+                        print(printerListProvider.printers[0]);
+
+                         _devices.forEach((element) { 
+                          if(element.address==printerListProvider.printers[0]){
+
+                            _startPrint(element, ArgumentsPrint(order, dishes));
+
+                          }
+                         });
+                       
+
+                      //  Navigator.pushNamed(context, 'printScreen', arguments: ArgumentsPrint(order, dishes));
 
                     },
                     icon: Icon(
@@ -253,6 +369,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
       ),
     );
   }
+  
 }
 
 class StatusDialog extends StatefulWidget {
@@ -317,3 +434,5 @@ class _StatusDialogState extends State<StatusDialog> {
         ));
   }
 }
+
+

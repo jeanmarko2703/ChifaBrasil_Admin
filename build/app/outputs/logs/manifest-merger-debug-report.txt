@@ -39,8 +39,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/jeanaguir
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/f17a074da2a8fd962aaff139fc15c51f/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/abce5eb4071a7c4a3a4bf619544355ad/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/abce5eb4071a7c4a3a4bf619544355ad/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7681dcd38dc0f67ca10654efb1282209/jetified-play-services-location-16.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7681dcd38dc0f67ca10654efb1282209/jetified-play-services-location-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/50f104272f46eedbb7d6c2017cc5910e/jetified-play-services-location-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/50f104272f46eedbb7d6c2017cc5910e/jetified-play-services-location-16.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/e6534811a787ece61e9a14c7906c0def/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
@@ -76,6 +76,7 @@ MERGED from [:firebase_core] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Adm
 MERGED from [:audioplayers] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:google_maps_flutter_android] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/google_maps_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_bluetooth_basic] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/flutter_bluetooth_basic/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:location] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-18:12
@@ -101,7 +102,7 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/jeanaguirre
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/03ce15878e001f392d85887b6d36f9ff/localbroadcastmanager-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/6b17dcfe9dd6f9cec70d6c7726c48ef7/jetified-firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/abce5eb4071a7c4a3a4bf619544355ad/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7681dcd38dc0f67ca10654efb1282209/jetified-play-services-location-16.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/50f104272f46eedbb7d6c2017cc5910e/jetified-play-services-location-16.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7aa47fb7625ae14b60667b248834ab17/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/e6534811a787ece61e9a14c7906c0def/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
@@ -162,6 +163,8 @@ MERGED from [:google_maps_flutter_android] /Users/jeanaguirre/Documents/GitHub/C
 MERGED from [:google_maps_flutter_android] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/google_maps_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_bluetooth_basic] /Users/jeanaguirre/Documents/GitHub/ChifaBrasil_Admin/build/flutter_bluetooth_basic/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -212,8 +215,8 @@ MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/jeanaguirre/
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/6b17dcfe9dd6f9cec70d6c7726c48ef7/jetified-firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/abce5eb4071a7c4a3a4bf619544355ad/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/abce5eb4071a7c4a3a4bf619544355ad/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7681dcd38dc0f67ca10654efb1282209/jetified-play-services-location-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7681dcd38dc0f67ca10654efb1282209/jetified-play-services-location-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/50f104272f46eedbb7d6c2017cc5910e/jetified-play-services-location-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/50f104272f46eedbb7d6c2017cc5910e/jetified-play-services-location-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/cc67751070ba8f7377d63ab76544c726/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/jeanaguirre/.gradle/caches/transforms-2/files-2.1/7aa47fb7625ae14b60667b248834ab17/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:5:5-44

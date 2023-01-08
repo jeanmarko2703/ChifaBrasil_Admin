@@ -25,7 +25,7 @@ class _CategoriesContentScreenState extends State<CategoriesContentScreen> {
         ModalRoute.of(context)!.settings.arguments as Category;
         Dish newDish = Dish(name: 'Nombre', price: 0.0, description: 'Descripción');
 
-    DishesService dishesService = Provider.of<DishesService>(context);
+    DishesService dishesService = Provider.of<DishesService>(context, listen: true);
 
     
     return Scaffold(

@@ -43,9 +43,18 @@ class AppState extends StatelessWidget {
           lazy: true,
         ),
         ChangeNotifierProvider(
+          create: (_) => MenuService(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider(
           create: (_) => DishFormProvider(),
           lazy: true,
         ),
+        ChangeNotifierProvider(
+          create: (_) => PrinterListProvider(),
+          lazy: true,
+        ),
+        
         ChangeNotifierProvider(
           create: (_) => ScheduleFormProvider(),
           lazy: true,

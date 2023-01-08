@@ -1,3 +1,6 @@
+export 'package:chifabrasil_admin/screens/print_detection_screen.dart';
+export 'package:chifabrasil_admin/screens/settings_screen.dart';
+
 export 'package:chifabrasil_admin/screens/home_screen.dart';
 export 'package:chifabrasil_admin/screens/information_screen.dart';
 
